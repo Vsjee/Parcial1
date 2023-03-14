@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sumNums"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/multiData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multiplicar" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/divData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dividir" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calcFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="Calc Factorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:id="@+id/numOne"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Primero numero " />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:id="@+id/numTwo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Segundo numero" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintVertical_bias="0.747">
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sumData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sumar" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/restarData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restar" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="413dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.301">
+
+        <Space
+            android:layout_width="51dp"
+            android:layout_height="21dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="51dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/calcRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
